@@ -1,0 +1,19 @@
+========================================================================
+WARNING: This implementation of SenseCode is a prototype and therefore might contain serious bugs. 
+=======================================================================
+
+The implementation of SenseCode is included in the ''sensecode'' directory.
+
+The directory demo contains a demo application that uses SenseCode.
+
+The demo application consists of a sink node that every 60 seconds broadcasts a request to all nodes in the network. All the other nodes answer the request by sending a packet with SenseCode.
+
+The demo application is setup to send data with a rate 0.5 systematic code and support up to 32 active nodes. It is possible to change these parameters in the file  ''DemoApp.h''.
+
+Included in the demo directory there is also a python script to run a TOSSIM simulation with 32 nodes.
+
+To run the demo application with TOSSIM:
+
+  1) Run ''make micaz sim'' in the ''demo'' directory
+  2) Run ''python runner.py'' in the ''demo'' directory
+
