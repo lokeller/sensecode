@@ -8,7 +8,7 @@ This is an implementation of the protocol describe in the paper:
 
 [L. Keller, E. Atsan, K. Argyraki, and C. Fragouli,
  SenseCode: Network Coding for Reliable Sensor Networks, 
- in ACM Transactions on Sensor Networks, vol. 9, iss. 2, 2013.](1)
+ in ACM Transactions on Sensor Networks, vol. 9, iss. 2, 2013.](http://lorenzo.nodo.ch/media/files/papers/tosn2013-sensecode.pdf)
 
 **Abstract**:
 
@@ -24,8 +24,6 @@ compare SenseCode to the best (to our knowledge) existing alternative and show t
 it reduces end-to-end packet error rate in highly dynamic environments, while consuming 
 a comparable amount of network resources. We have implemented SenseCode as 
 a TinyOS module and evaluate it through extensive TOSSIM simulations. 
-
-[1] http://lorenzo.nodo.ch/media/files/papers/tosn2013-sensecode.pdf
 
 **Description of the contents**:
 
