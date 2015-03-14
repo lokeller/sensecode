@@ -1,5 +1,5 @@
-SenseCode: network coding for reliable sensor networks
------------------------------------------------------------------
+SenseCode
+-------------
 
 **WARNING: This implementation of SenseCode is a prototype and therefore may 
 contain serious bugs.**
