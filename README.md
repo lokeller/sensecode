@@ -1,5 +1,5 @@
 SenseCode
--------------
+---------
 
 **WARNING: This implementation of SenseCode is a prototype and therefore may 
 contain serious bugs.**
@@ -41,6 +41,13 @@ Included in the demo directory there is also a python script to run a TOSSIM sim
 
 To run the demo application with TOSSIM:
 
-  1. Run `make micaz sim` in the `demo` directory
-  2. Run `python runner.py` in the `demo` directory
+  1. Install docker engine on your machine (tested with Docker 20.10.2)
+
+  2. Build a docker image with all the dependencies with the command `docker build -t senscode .`
+
+  3. Start a docker container with the image with the command: `docker run --rm -it -v "$(pwd):/opt/sensecode" sensecode`
+
+  4. In the container compile the code with the command `cd demo && make micaz sim`
+
+  5. Run the code with the command `python runner.py`
 
