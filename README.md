@@ -37,7 +37,7 @@ all nodes in the network. All the other nodes answer the request by sending a pa
 The demo application is setup to send data with a rate 0.5 systematic code and support 
 up to 32 active nodes. It is possible to change these parameters in the file  `DemoApp.h`.
 
-Included in the demo directory there is also a python script to run a TOSSIM simulation with 32 nodes.
+Included in the demo directory there is also a python script to run a TOSSIM simulation.
 
 To run the demo application with TOSSIM:
 
@@ -51,3 +51,9 @@ To run the demo application with TOSSIM:
 
   5. Run the code with the command `python runner.py`
 
+The simulation code uses a test network with 32 nodes. It can be changed using the files 
+in `demo/test` and the variable numNodes in the `runner.py` script. The file `linkgains.dat` 
+describes the attenuation on the link between each pair of nodes and the file `noise.dat` 
+contains a sample of noise that is used to build the statistical model used in the simulation. 
+The syntax and semantic of these files is described in detail the 
+[TOSSIM Documentation](http://tinyos.stanford.edu/tinyos-wiki/index.php/TOSSIM#Configuring_a_Network).
